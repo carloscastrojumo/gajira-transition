@@ -18,7 +18,7 @@ jobs:
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
     - name: Transition issue
-      uses: atlassian/gajira-transition@v3
+      uses: carloscastrojumo/gajira-transition@debug-transition
       with:
         issue: "FL-7141"
         transition: "In progress"
